@@ -1,15 +1,8 @@
 function reverse(count, numbers) {
-    // create new array
-    let reversedNumbers = []; // create empty array
-
-    // take count elements from numbers
-    // reverse the elements
+    let reversedNumbers = [];
     for (let i = 0; i < count; i++) {
-        // result[count - 1 - i] = numbers[i];
         reversedNumbers[i] = numbers[count - 1 - i];
     }
-
-    // print for winners :) 
     let result = '';
     for (let i = 0; i < reversedNumbers.length; i++) {
         result += reversedNumbers[i];
